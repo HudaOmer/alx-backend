@@ -3,6 +3,7 @@
 0. Simple helper function
 """
 
+
 def index_range(page, page_size):
     """
     function index_range
