@@ -53,10 +53,10 @@ class Server:
         """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
-        
+
         start_index, end_index = index_range(page, page_size)
         dataset = self.dataset()
-        
+
         if end_index > len(dataset):
             return []
         return dataset[start_index:end_index]
@@ -70,10 +70,9 @@ class Server:
         Return:
             List[List]: The page of the dataset.
         """
-        
         getpage = self.get_page(page, page_size)
         pages = len(self.dataset()) // page_size \
-                + (len(self.dataset()) % page_size != 0)
+            + (len(self.dataset()) % page_size != 0)
         dictionary = {
                 "page_size": page_size,
                 "page": page,
