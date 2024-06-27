@@ -2,6 +2,7 @@
 """ 100-main """
 LFUCache = __import__('100-lfu_cache').LFUCache
 
+
 my_cache = LFUCache()
 my_cache.put("A", "Hello")
 my_cache.put("B", "World")

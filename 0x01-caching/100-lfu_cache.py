@@ -7,7 +7,7 @@ from base_caching import BaseCaching
 
 class LFUCache(BaseCaching):
     """
-    This class description
+    This class description:
     LFUCache defines a LFU caching system
     """
 
